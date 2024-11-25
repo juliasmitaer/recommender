@@ -1,0 +1,2215 @@
+Instruction,Input,Output,materi,question_id,Full Code,Template
+Write a Python program to convert a timestamp (in seconds) to a date format (dd-mm-yyyy).,timestamp: 1591123259,"import datetime
+
+# Function to convert the timestamp 
+def getDateTime(timestamp):
+ return datetime.datetime.fromtimestamp(timestamp).strftime(""%d-%m-%Y"")
+
+# Driver program
+timestamp = 1591123259
+print(getDateTime(timestamp))
+# Output: 17-06-2020",Operator,137,"import datetime
+
+# Function to convert the timestamp 
+def getDateTime(timestamp):
+ return datetime.datetime.fromtimestamp(timestamp).strftime(""%d-%m-%Y"")
+
+# Driver program
+timestamp = 1591123259
+print(getDateTime(timestamp))
+# Output: 17-06-2020","import datetime
+
+# Function to convert the timestamp 
+def getDateTime(timestamp):
+ return datetime.datetime.fromtimestamp(timestamp).strftime(""%d-%m-%Y"")
+
+# Driver program
+timestamp = 1591123259
+print(getDateTime(timestamp))
+    ___"
+Write a code to generate a two-dimensional array with zeros shapes in Python,"Row = 3, Column = 3","""""""
+Write a code to generate a two-dimensional array with zeros shapes in Python
+""""""
+
+def generate_zeros_array(row,col):
+    return [[0] * col for _ in range(row)]
+
+# Example
+row = 3
+col = 3
+
+array = generate_zeros_array(row, col)
+print(array)
+# Output: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]",Operator,300,"""""""
+Write a code to generate a two-dimensional array with zeros shapes in Python
+""""""
+
+def generate_zeros_array(row,col):
+    return [[0] * col for _ in range(row)]
+
+# Example
+row = 3
+col = 3
+
+array = generate_zeros_array(row, col)
+print(array)
+# Output: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]","""""""
+    ___
+""""""
+
+def generate_zeros_array(row,col):
+    return [[0] * col for _ in range(row)]
+
+# Example
+row = 3
+col = 3
+
+array = generate_zeros_array(row, col)
+print(array)
+# Output: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]"
+Write a Python program to find the n-th smallest number in the following list,"[2, 3, 5, 7, 11] n = 2","def nth_smallest(input_list, n):
+    input_list.sort()
+    return input_list[n-1]
+
+input_list = [2, 3, 5, 7, 11]
+n = 2
+result = nth_smallest(input_list, n)
+print(result)",Operator,302,"def nth_smallest(input_list, n):
+    input_list.sort()
+    return input_list[n-1]
+
+input_list = [2, 3, 5, 7, 11]
+n = 2
+result = nth_smallest(input_list, n)
+print(result)","def nth_smallest(input_list, n):
+    input_list.sort()
+    ___
+
+input_list = [2, 3, 5, 7, 11]
+n = 2
+result = nth_smallest(input_list, n)
+print(result)"
+Create a code snippet in Java to parse a comma-separated string into a list of strings.,"""Ruby,Python,JavaScript""","String str = ""Ruby,Python,JavaScript"";
+List<String> list = Arrays.asList(str.split("",""));
+
+// Output 
+// [Ruby,Python,JavaScript]",Operator,416,"String str = ""Ruby,Python,JavaScript"";
+List<String> list = Arrays.asList(str.split("",""));
+
+// Output 
+// [Ruby,Python,JavaScript]","String str = ""Ruby,Python,JavaScript"";
+    ___
+
+// Output 
+// [Ruby,Python,JavaScript]"
+Generate an algorithm in Python that sorts the given array of numbers in the non-decreasing order.,"arr = [1, 9, 3, 8, 4]","def bubble_sort(arr): 
+    n = len(arr)
+  
+    for i in range(n-1): 
+        for j in range(0, n-i-1): 
+            if arr[j] > arr[j+1] : 
+                arr[j], arr[j+1] = arr[j+1], arr[j] 
+  
+arr = [1, 9, 3, 8, 4]
+
+bubble_sort(arr) 
+
+print (""Sorted array is:"") 
+for i in range(len(arr)): 
+    print (""%d"" %arr[i])",Operator,447,"def bubble_sort(arr): 
+    n = len(arr)
+  
+    for i in range(n-1): 
+        for j in range(0, n-i-1): 
+            if arr[j] > arr[j+1] : 
+                arr[j], arr[j+1] = arr[j+1], arr[j] 
+  
+arr = [1, 9, 3, 8, 4]
+
+bubble_sort(arr) 
+
+print (""Sorted array is:"") 
+for i in range(len(arr)): 
+    print (""%d"" %arr[i])","def bubble_sort(arr): 
+    n = len(arr)
+  
+    ___
+    ___
+    ___
+    ___
+  
+arr = [1, 9, 3, 8, 4]
+
+bubble_sort(arr) 
+
+print (""Sorted array is:"") 
+for i in range(len(arr)): 
+    print (""%d"" %arr[i])"
+Create a Python script to calculate and display the distance between two points in 2-dimensional space.,"Two points: (5,3) & (2,2)","import math
+ 
+def distance(p1,p2):
+ x1,y1 = p1
+ x2,y2 = p2
+ d = math.sqrt((x2-x1)**2+(y2-y1)**2)
+ return d
+ 
+x1,y1 = (5,3)
+x2,y2 = (2,2)
+print(f""The distance between 2 points ({x1},{y1}) & ({x2},{y2}) is: {distance((x1,y1),(x2,y2))}"")
+
+// Output:
+The distance between 2 points (5,3) & (2,2) is: 3.1622776601683795",Operator,493,"import math
+ 
+def distance(p1,p2):
+ x1,y1 = p1
+ x2,y2 = p2
+ d = math.sqrt((x2-x1)**2+(y2-y1)**2)
+ return d
+ 
+x1,y1 = (5,3)
+x2,y2 = (2,2)
+print(f""The distance between 2 points ({x1},{y1}) & ({x2},{y2}) is: {distance((x1,y1),(x2,y2))}"")
+
+// Output:
+The distance between 2 points (5,3) & (2,2) is: 3.1622776601683795","import math
+ 
+def distance(p1,p2):
+ x1,y1 = p1
+ x2,y2 = p2
+    ___
+ return d
+ 
+x1,y1 = (5,3)
+x2,y2 = (2,2)
+print(f""The distance between 2 points ({x1},{y1}) & ({x2},{y2}) is: {distance((x1,y1),(x2,y2))}"")
+
+// Output:
+The distance between 2 points (5,3) & (2,2) is: 3.1622776601683795"
+Generate a program in Python to evaluate the following expression: (x*x) − (𝑦*𝑦),"x=10
+y=5","x = 10
+y = 5
+
+result = (x*x) - (y*y)
+print(result)",Operator,853,"x = 10
+y = 5
+
+result = (x*x) - (y*y)
+print(result)","x = 10
+y = 5
+
+    ___
+print(result)"
+Create a functional programming program to calculate the value of the Fibonacci number up to the n-th number in Python.,The number should be 9.,"def fibonacci(n):
+ if n < 0:
+ raise ValueError(""Negative number"")
+ if n == 0 or n == 1:
+ return n
+ return fibonacci(n-1) + fibonacci(n-2)
+ 
+# calculate 9th Fibonacci number
+print(fibonacci(9))",Operator,1020,"def fibonacci(n):
+ if n < 0:
+ raise ValueError(""Negative number"")
+ if n == 0 or n == 1:
+ return n
+ return fibonacci(n-1) + fibonacci(n-2)
+ 
+# calculate 9th Fibonacci number
+print(fibonacci(9))","def fibonacci(n):
+ if n < 0:
+ raise ValueError(""Negative number"")
+ if n == 0 or n == 1:
+ return n
+    ___
+ 
+# calculate 9th Fibonacci number
+print(fibonacci(9))"
+Encode a given URL using percent-encoding.,https://www.example.com/search?q=python,"String url = ""https://www.example.com/search?q=python"";
+String encodedUrl = URLEncoder.encode(url, ""UTF-8"");
+System.out.println(encodedUrl);  // https%3A%2F%2Fwww.example.com%2Fsearch%3Fq%3Dpython",Operator,1071,"String url = ""https://www.example.com/search?q=python"";
+String encodedUrl = URLEncoder.encode(url, ""UTF-8"");
+System.out.println(encodedUrl);  // https%3A%2F%2Fwww.example.com%2Fsearch%3Fq%3Dpython","    ___
+    ___
+    ___"
+Use Python to modify a JSON object for specific key-value pairs.,"Object: {name: Tom, age: 25, occupation: Data Scientist, hobbies: [Reading, Badminton]}","# Modify a JSON object
+
+import json
+
+object = {'name': 'Tom', 'age': 25, 'occupation': 'Data Scientist', 'hobbies': ['Reading', 'Badminton']}
+
+if 'occupation' in object:
+    object['occupation'] = 'AI Engineer'
+
+if 'hobbies' in object:
+    object['hobbies'].append('Cycling')
+
+print(json.dumps(object,indent=2))",Operator,1319,"# Modify a JSON object
+
+import json
+
+object = {'name': 'Tom', 'age': 25, 'occupation': 'Data Scientist', 'hobbies': ['Reading', 'Badminton']}
+
+if 'occupation' in object:
+    object['occupation'] = 'AI Engineer'
+
+if 'hobbies' in object:
+    object['hobbies'].append('Cycling')
+
+print(json.dumps(object,indent=2))","# Modify a JSON object
+
+import json
+
+object = {'name': 'Tom', 'age': 25, 'occupation': 'Data Scientist', 'hobbies': ['Reading', 'Badminton']}
+
+if 'occupation' in object:
+    object['occupation'] = 'AI Engineer'
+
+if 'hobbies' in object:
+    object['hobbies'].append('Cycling')
+
+    ___"
+Generate a Python script using Scikit-Learn for performing k-means clustering on a given dataset.,"Dataset: The dataset consists of three features x1, x2 and x3.","import numpy as np
+from sklearn.cluster import KMeans
+
+data = np.array([[x1, x2, x3]]) #replace x1, x2 and x3 with the features in the dataset
+
+kmeans = KMeans(n_clusters=3).fit(data)
+clusters = kmeans.predict(data)",Operator,1359,"import numpy as np
+from sklearn.cluster import KMeans
+
+data = np.array([[x1, x2, x3]]) #replace x1, x2 and x3 with the features in the dataset
+
+kmeans = KMeans(n_clusters=3).fit(data)
+clusters = kmeans.predict(data)","import numpy as np
+from sklearn.cluster import KMeans
+
+data = np.array([[x1, x2, x3]]) #replace x1, x2 and x3 with the features in the dataset
+
+    ___
+clusters = kmeans.predict(data)"
+Create a Python program to optimize a given function using the Nelder-Mead method.,"def f(x):
+ return x[0]**2 + 4*x[1]**2
+[3, -2]","from scipy.optimize import minimize
+def f(x):
+    return x[0]**2 + 4*x[1]**2
+
+res = minimize(f, [3, -2], method='nelder-mead')
+
+print(res.x)",Operator,1393,"from scipy.optimize import minimize
+def f(x):
+    return x[0]**2 + 4*x[1]**2
+
+res = minimize(f, [3, -2], method='nelder-mead')
+
+print(res.x)","from scipy.optimize import minimize
+def f(x):
+    ___
+
+    ___
+
+print(res.x)"
+Write a Python program that will determine the maximum number of unique paths a person can take from one point to another in a two-dimensional grid.,"grid = [
+[0,1],
+[1,1]
+]","def unique_paths(grid):
+ rows = len(grid)
+ cols = len(grid[0])
+ 
+ dp = [[0 for i in range(cols)] for j in range(rows)]
+ 
+ for i in range(rows):
+ for j in range(cols):
+ if i == 0 or j == 0:
+ dp[i][j] = 1
+ else:
+ dp[i][j] = dp[i][j-1] + dp[i-1][j]
+ 
+ return dp[-1][-1]
+ 
+print(unique_paths(grid))
+# Output: 2",Operator,1426,"def unique_paths(grid):
+ rows = len(grid)
+ cols = len(grid[0])
+ 
+ dp = [[0 for i in range(cols)] for j in range(rows)]
+ 
+ for i in range(rows):
+ for j in range(cols):
+ if i == 0 or j == 0:
+ dp[i][j] = 1
+ else:
+ dp[i][j] = dp[i][j-1] + dp[i-1][j]
+ 
+ return dp[-1][-1]
+ 
+print(unique_paths(grid))
+# Output: 2","def unique_paths(grid):
+ rows = len(grid)
+ cols = len(grid[0])
+ 
+ dp = [[0 for i in range(cols)] for j in range(rows)]
+ 
+ for i in range(rows):
+ for j in range(cols):
+ if i == 0 or j == 0:
+ dp[i][j] = 1
+ else:
+    ___
+ 
+ return dp[-1][-1]
+ 
+print(unique_paths(grid))
+# Output: 2"
+Refactor the following Python code to use list comprehension instead of for-loops.,"my_list = [1, 2, 3, 4, 5] 
+new_list = []
+
+for item in my_list:
+ if item % 2 == 0:
+ new_list.append(item**2)","my_list = [1, 2, 3, 4, 5] 
+new_list = [x**2 for x in my_list if x % 2 == 0]",Operator,1430,"my_list = [1, 2, 3, 4, 5] 
+new_list = [x**2 for x in my_list if x % 2 == 0]","my_list = [1, 2, 3, 4, 5] 
+    ___"
+Create a program in Python that calculates the median of an array of integers without using the built-in function.,"[1, 2, 3, 4, 5]","def median(arr): 
+ n = len(arr) 
+ arr.sort() 
+
+ # check for even case 
+ if n % 2 == 0: 
+ return (arr[int((n - 1)/2)] +
+ arr[int(n/2)]) / 2
+
+else: 
+ return arr[int(n/2)] 
+
+# test
+arr = [1, 2, 3, 4, 5] 
+print(""Median ="", median(arr)) 
+
+# Output: Median = 3.0",Operator,1559,"def median(arr): 
+ n = len(arr) 
+ arr.sort() 
+
+ # check for even case 
+ if n % 2 == 0: 
+ return (arr[int((n - 1)/2)] +
+ arr[int(n/2)]) / 2
+
+else: 
+ return arr[int(n/2)] 
+
+# test
+arr = [1, 2, 3, 4, 5] 
+print(""Median ="", median(arr)) 
+
+# Output: Median = 3.0","def median(arr): 
+ n = len(arr) 
+ arr.sort() 
+
+ # check for even case 
+ if n % 2 == 0: 
+ return (arr[int((n - 1)/2)] +
+    ___
+
+else: 
+    ___
+
+# test
+arr = [1, 2, 3, 4, 5] 
+print(""Median ="", median(arr)) 
+
+# Output: Median = 3.0"
+Generate a Python script that computes the area of an ellipse given its semi-major axis and semi-minor axis as inputs.,"Semi-major axis = 5
+Semi-minor axis = 3","import math
+
+# Semi-Major Axis
+a = 5
+
+# Semi-Minor Axis
+b = 3
+
+# Calculate the area of an ellipse
+area = math.pi * a * b
+
+print(""The area of the ellipse is"", area)",Operator,1565,"import math
+
+# Semi-Major Axis
+a = 5
+
+# Semi-Minor Axis
+b = 3
+
+# Calculate the area of an ellipse
+area = math.pi * a * b
+
+print(""The area of the ellipse is"", area)","import math
+
+    ___
+a = 5
+
+    ___
+b = 3
+
+# Calculate the area of an ellipse
+area = math.pi * a * b
+
+print(""The area of the ellipse is"", area)"
+Write a script in Python to sort the given list of numbers in non-decreasing order,"[3, 2, 7, 1, 9, 5]","def sortNumbers(nums): 
+    for i in range(len(nums)-1): 
+        minPos = i 
+        for j in range(i+1,len(nums)): 
+            if nums[minPos] > nums[j]: 
+                minPos = j 
+        nums[i],nums[minPos] = nums[minPos],nums[i] 
+
+nums = [3, 2, 7, 1, 9, 5]
+sortNumbers(nums) 
+print(nums)",Operator,1732,"def sortNumbers(nums): 
+    for i in range(len(nums)-1): 
+        minPos = i 
+        for j in range(i+1,len(nums)): 
+            if nums[minPos] > nums[j]: 
+                minPos = j 
+        nums[i],nums[minPos] = nums[minPos],nums[i] 
+
+nums = [3, 2, 7, 1, 9, 5]
+sortNumbers(nums) 
+print(nums)","def sortNumbers(nums): 
+    for i in range(len(nums)-1): 
+        minPos = i 
+    ___
+            if nums[minPos] > nums[j]: 
+                minPos = j 
+        nums[i],nums[minPos] = nums[minPos],nums[i] 
+
+nums = [3, 2, 7, 1, 9, 5]
+sortNumbers(nums) 
+print(nums)"
+"Write a Python program to generate a dictionary which contains (i, i*i) such that i is an int between 1 and N.",N = 10,"""""""
+A Python program to generate a dictionary which contains (i, i*i) such that i is an int between 1 and N
+""""""
+
+N = 10
+my_dict = {}
+
+# Generate the dictionary
+for i in range(1, N+1):
+    my_dict[i] = i * i
+
+# Print the dictionary
+print(my_dict)",Operator,2114,"""""""
+A Python program to generate a dictionary which contains (i, i*i) such that i is an int between 1 and N
+""""""
+
+N = 10
+my_dict = {}
+
+# Generate the dictionary
+for i in range(1, N+1):
+    my_dict[i] = i * i
+
+# Print the dictionary
+print(my_dict)","""""""
+    ___
+""""""
+
+N = 10
+my_dict = {}
+
+# Generate the dictionary
+    ___
+    my_dict[i] = i * i
+
+# Print the dictionary
+print(my_dict)"
+Write a Python program to optimize a set of points in a 3-dimensional plane.,"points = [[10, 12, 13], [1, 8, 9], [3, 5, 7]]","import scipy.optimize as opt
+
+def objective(x):
+ return sum([x[i]**2 for i in range(len(x))])
+
+def constraint1(x):
+ return 16 - x[0]**2 - x[1]**2 - x[2]**2
+
+cons = [{'type': 'ineq','fun': constraint1}]
+
+x = [0, 0, 0]
+
+solution = opt.minimize(objective, x, constraints=cons)
+
+print(solution)",Operator,2116,"import scipy.optimize as opt
+
+def objective(x):
+ return sum([x[i]**2 for i in range(len(x))])
+
+def constraint1(x):
+ return 16 - x[0]**2 - x[1]**2 - x[2]**2
+
+cons = [{'type': 'ineq','fun': constraint1}]
+
+x = [0, 0, 0]
+
+solution = opt.minimize(objective, x, constraints=cons)
+
+print(solution)","import scipy.optimize as opt
+
+def objective(x):
+ return sum([x[i]**2 for i in range(len(x))])
+
+def constraint1(x):
+ return 16 - x[0]**2 - x[1]**2 - x[2]**2
+
+cons = [{'type': 'ineq','fun': constraint1}]
+
+x = [0, 0, 0]
+
+    ___
+
+print(solution)"
+Develop an algorithm in Python for finding the maximum index of an array's sub-array.,"arr = [2, 3, 4, 5, 7, 9, 11]","def findMaxIndex(arr):
+    """"""This function finds the maximum index of an array's sub-array.""""""
+    maxIndex = 0
+    currentMax = 0
+    for i in range(1, len(arr)):
+        if arr[i] > arr[currentMax]:
+            maxIndex = i
+            currentMax = i
+    return maxIndex
+
+arr = [2, 3, 4, 5, 7, 9, 11]
+maxIndex = findMaxIndex(arr)
+print(maxIndex) # Output: 5",Operator,2199,"def findMaxIndex(arr):
+    """"""This function finds the maximum index of an array's sub-array.""""""
+    maxIndex = 0
+    currentMax = 0
+    for i in range(1, len(arr)):
+        if arr[i] > arr[currentMax]:
+            maxIndex = i
+            currentMax = i
+    return maxIndex
+
+arr = [2, 3, 4, 5, 7, 9, 11]
+maxIndex = findMaxIndex(arr)
+print(maxIndex) # Output: 5","def findMaxIndex(arr):
+    ___
+    maxIndex = 0
+    currentMax = 0
+    for i in range(1, len(arr)):
+        if arr[i] > arr[currentMax]:
+            maxIndex = i
+            currentMax = i
+    return maxIndex
+
+arr = [2, 3, 4, 5, 7, 9, 11]
+maxIndex = findMaxIndex(arr)
+print(maxIndex) # Output: 5"
+"Write an Python script to extract the year, month and day from a given date in the format ""dd/mm/yyyy"".","""27/09/2017""","import datetime
+
+date_string = ""27/09/2017""
+
+date_object = datetime.datetime.strptime(date_string, ""%d/%m/%Y"")
+
+print(""Year:"", date_object.year)
+print(""Month:"", date_object.month)
+print(""Day:"", date_object.day)",Operator,2219,"import datetime
+
+date_string = ""27/09/2017""
+
+date_object = datetime.datetime.strptime(date_string, ""%d/%m/%Y"")
+
+print(""Year:"", date_object.year)
+print(""Month:"", date_object.month)
+print(""Day:"", date_object.day)","import datetime
+
+    ___
+
+date_object = datetime.datetime.strptime(date_string, ""%d/%m/%Y"")
+
+print(""Year:"", date_object.year)
+print(""Month:"", date_object.month)
+print(""Day:"", date_object.day)"
+"Given a JSON object containing a list of key/value pairs, write a Python function to sort the list by value.","{
+  ""a"": 23,
+  ""b"": 42,
+  ""c"": 16
+}","def sort_by_value(data):
+ sorted_list = sorted(data.items(), key=lambda kv: kv[1])
+ return sorted_list
+ 
+print(sort_by_value({""a"": 23, ""b"": 42, ""c"": 16}))
+# Output -> [('c', 16), ('a', 23), ('b', 42)]  # sorted by value",Operator,2365,"def sort_by_value(data):
+ sorted_list = sorted(data.items(), key=lambda kv: kv[1])
+ return sorted_list
+ 
+print(sort_by_value({""a"": 23, ""b"": 42, ""c"": 16}))
+# Output -> [('c', 16), ('a', 23), ('b', 42)]  # sorted by value","def sort_by_value(data):
+    ___
+ return sorted_list
+ 
+print(sort_by_value({""a"": 23, ""b"": 42, ""c"": 16}))
+# Output -> [('c', 16), ('a', 23), ('b', 42)]  # sorted by value"
+"Create an SHA-2 encryption algorithm in Python using a provided string ""abc"".",abc,"import hashlib
+
+s = 'abc'.encode(""utf-8"")
+
+hash_object = hashlib.sha256(s)
+hex_dig = hash_object.hexdigest()
+print(hex_dig)",Operator,2524,"import hashlib
+
+s = 'abc'.encode(""utf-8"")
+
+hash_object = hashlib.sha256(s)
+hex_dig = hash_object.hexdigest()
+print(hex_dig)","import hashlib
+
+    ___
+
+hash_object = hashlib.sha256(s)
+hex_dig = hash_object.hexdigest()
+print(hex_dig)"
+Generate a Python function that takes as input a UTF-8 encoded string and returns a string where the characters in odd positions of the original string are repeated.,string = ‘HelloWorld’,"def repeat_char(s):
+    result = ''
+    for i,c in enumerate(s):
+        if i % 2 == 0:
+            result += c
+        else:
+            result += c*2
+    return result
+
+print(repeat_char('HelloWorld'))
+# Output: HeellooWorrlld",Operator,2593,"def repeat_char(s):
+    result = ''
+    for i,c in enumerate(s):
+        if i % 2 == 0:
+            result += c
+        else:
+            result += c*2
+    return result
+
+print(repeat_char('HelloWorld'))
+# Output: HeellooWorrlld","def repeat_char(s):
+    result = ''
+    for i,c in enumerate(s):
+        if i % 2 == 0:
+            result += c
+        else:
+    ___
+    return result
+
+print(repeat_char('HelloWorld'))
+# Output: HeellooWorrlld"
+Maxminizing a Black-Box function (Python),"A Black box function:
+
+def black_box (x):
+  return x ** 2 + 40","import scipy.optimize
+
+# define the black box function
+def black_box(x):
+    return x ** 2 + 40
+
+# set the initial parameters 
+start = (0, 0)
+
+# minimize the black box function
+res = scipy.optimize.minimize(black_box, start, method=""L-BFGS-B"")
+
+# print the result
+print(res.x) # prints [0.]",Operator,2636,"import scipy.optimize
+
+# define the black box function
+def black_box(x):
+    return x ** 2 + 40
+
+# set the initial parameters 
+start = (0, 0)
+
+# minimize the black box function
+res = scipy.optimize.minimize(black_box, start, method=""L-BFGS-B"")
+
+# print the result
+print(res.x) # prints [0.]","import scipy.optimize
+
+# define the black box function
+def black_box(x):
+    return x ** 2 + 40
+
+# set the initial parameters 
+start = (0, 0)
+
+# minimize the black box function
+    ___
+
+# print the result
+print(res.x) # prints [0.]"
+Write a Python script to rewrite the four-digit year of birth in the YYYY-MM-DD format.,Year: 1985,"def formatYear (birthYear):
+ return str(birthYear)+""-01-01""",Operator,2641,"def formatYear (birthYear):
+ return str(birthYear)+""-01-01""","def formatYear (birthYear):
+    ___"
+Write a Python function to recognize a date (in “DD/MM/YYYY” format) in a string,The deadline is 23/05/2020,"def recognize_date(s):
+    '''This function recognizes a date (in DD/MM/YYYY format) in a string.'''
+    # Regex for DD/MM/YYYY format
+    format_regex = re.compile(r'\d{2}/\d{2}/\d{4}') 
+    match = format_regex.search(s)
+    if match:
+        date = match.group()
+        return date
+    else:
+        return None",Operator,2680,"def recognize_date(s):
+    '''This function recognizes a date (in DD/MM/YYYY format) in a string.'''
+    # Regex for DD/MM/YYYY format
+    format_regex = re.compile(r'\d{2}/\d{2}/\d{4}') 
+    match = format_regex.search(s)
+    if match:
+        date = match.group()
+        return date
+    else:
+        return None","def recognize_date(s):
+    ___
+    ___
+    format_regex = re.compile(r'\d{2}/\d{2}/\d{4}') 
+    match = format_regex.search(s)
+    if match:
+        date = match.group()
+        return date
+    else:
+        return None"
+Create a function in Python to sort this list of high-scores in descending order.,"[150, 160, 233, 700, 800, 1200]","def sortScores(scores):
+    return sorted(scores, reverse=True)",Operator,2707,"def sortScores(scores):
+    return sorted(scores, reverse=True)","def sortScores(scores):
+    ___"
+"Write a Python program to generate a dictionary that contains numbers (between 1 and n) in the form (x, x*x).",n = 8,"nums = {x: x*x for x in range(1, n+1)}
+print(nums)",Operator,2884,"nums = {x: x*x for x in range(1, n+1)}
+print(nums)","    ___
+print(nums)"
+Generate a json response from a python method that takes two parameters and returns a dictionary of key-value mappings.,"param1 = 'key1'
+param2 = 'value1'","def generate_response(param1, param2):
+    # dictionary of key-value mappings
+    key_value_mappings = {
+        param1: param2
+    }
+
+    # create json response
+    json_response = json.dumps(key_value_mappings)
+
+    return json_response",Operator,2942,"def generate_response(param1, param2):
+    # dictionary of key-value mappings
+    key_value_mappings = {
+        param1: param2
+    }
+
+    # create json response
+    json_response = json.dumps(key_value_mappings)
+
+    return json_response","def generate_response(param1, param2):
+    ___
+    key_value_mappings = {
+        param1: param2
+    }
+
+    # create json response
+    json_response = json.dumps(key_value_mappings)
+
+    return json_response"
+Create a python function that reads comma-separated values to generate a dataframe.,"Name, Age, City
+Jane, 36, London
+John, 24, Paris","def csv_to_df(csv):
+    # Create an empty list
+    df = []
+
+    # Add each row as a list
+    lines = csv.split(""\n"")
+    for line in lines:
+        df.append(line.split("",""))
+
+    # Convert list into a DataFrame
+    import pandas as pd
+    df = pd.DataFrame(df[1:], columns=df[0])
+    return df",Operator,2987,"def csv_to_df(csv):
+    # Create an empty list
+    df = []
+
+    # Add each row as a list
+    lines = csv.split(""\n"")
+    for line in lines:
+        df.append(line.split("",""))
+
+    # Convert list into a DataFrame
+    import pandas as pd
+    df = pd.DataFrame(df[1:], columns=df[0])
+    return df","def csv_to_df(csv):
+    # Create an empty list
+    df = []
+
+    # Add each row as a list
+    lines = csv.split(""\n"")
+    for line in lines:
+        df.append(line.split("",""))
+
+    # Convert list into a DataFrame
+    import pandas as pd
+    ___
+    return df"
+Write a Python program to detect out-of-range values in a given column of a data set.,"column = ""Salary""
+dataset = {
+ ""John"": {""Salary"": 75000, ""Age"": 30},
+ ""Sam"": {""Salary"": 90000, ""Age"": 45},
+ ""Jill"": {""Salary"": 120000, ""Age"": 25},
+ ""Thomas"": {""Salary"": 80000, ""Age"": 40}
+}","for row in dataset.values():
+ salary = row['Salary']
+ if salary < 40000 or salary > 100000:
+ print(""Out-of-range value: {}"".format(salary))",Operator,2997,"for row in dataset.values():
+ salary = row['Salary']
+ if salary < 40000 or salary > 100000:
+ print(""Out-of-range value: {}"".format(salary))","for row in dataset.values():
+ salary = row['Salary']
+ if salary < 40000 or salary > 100000:
+    ___"
+Create a machine learning model using Python and Scikit-Learn that can classify emails as either spam or ham.,CSV file containing features extracted from Spam and Ham emails.,Machine learning model using Python and Scikit-Learn that can classify emails as either spam or ham.,Operator,2999,Machine learning model using Python and Scikit-Learn that can classify emails as either spam or ham.,    ___
+Implement a K-Means clustering algorithm in Python to cluster the given set of points into three clusters.,"dataset = [[2, 4], [5, 8], [3, 7], [9, 2], [7, 1]]","import numpy as np 
+from sklearn.cluster import KMeans 
+
+dataset = [[2, 4], [5, 8], [3, 7], [9, 2], [7, 1]]
+
+X = np.array(dataset) 
+
+kmeans = KMeans(n_clusters=3, random_state=0).fit(X)
+
+labels = kmeans.labels_
+
+for i in range(len(X)):
+ print(""datapoint:"", X[i], ""belongs to cluster"", labels[i])",Operator,3000,"import numpy as np 
+from sklearn.cluster import KMeans 
+
+dataset = [[2, 4], [5, 8], [3, 7], [9, 2], [7, 1]]
+
+X = np.array(dataset) 
+
+kmeans = KMeans(n_clusters=3, random_state=0).fit(X)
+
+labels = kmeans.labels_
+
+for i in range(len(X)):
+ print(""datapoint:"", X[i], ""belongs to cluster"", labels[i])","import numpy as np 
+from sklearn.cluster import KMeans 
+
+dataset = [[2, 4], [5, 8], [3, 7], [9, 2], [7, 1]]
+
+X = np.array(dataset) 
+
+    ___
+
+labels = kmeans.labels_
+
+for i in range(len(X)):
+ print(""datapoint:"", X[i], ""belongs to cluster"", labels[i])"
+Create a function in Python that will convert a given string of text into its equivalent URL-safe slug format.,This is a sample string,"def url_slug(text):
+ '''Takes text and converts it to url-safe slug format.
+ 
+ Args:
+ text (str): Text to be converted to slug
+ 
+ Returns:
+ str: slugified text
+ '''
+ 
+ text = text.lower()
+ text = re.sub(r'\s+', '-', text)
+ text = re.sub(r'[^\w-]', '', text)
+ return text",Operator,3174,"def url_slug(text):
+ '''Takes text and converts it to url-safe slug format.
+ 
+ Args:
+ text (str): Text to be converted to slug
+ 
+ Returns:
+ str: slugified text
+ '''
+ 
+ text = text.lower()
+ text = re.sub(r'\s+', '-', text)
+ text = re.sub(r'[^\w-]', '', text)
+ return text","def url_slug(text):
+    ___
+ 
+ Args:
+ text (str): Text to be converted to slug
+ 
+ Returns:
+ str: slugified text
+ '''
+ 
+ text = text.lower()
+ text = re.sub(r'\s+', '-', text)
+ text = re.sub(r'[^\w-]', '', text)
+ return text"
+Create a Python program to calculate the formula 2*sqrt(x+2).,x = 10,"import math
+
+x = 10
+
+result = 2*math.sqrt(x+2)
+
+print(result ) # 12.0",Operator,3419,"import math
+
+x = 10
+
+result = 2*math.sqrt(x+2)
+
+print(result ) # 12.0","import math
+
+x = 10
+
+    ___
+
+print(result ) # 12.0"
+Generate a code snippet in Python to convert a string with the following format to a dictionary. (name1=123&name2=456&name3=789).,name1=123&name2=456&name3=789,"inp = ""name1=123&name2=456&name3=789""
+kv = inp.split(""&"")
+d = {}
+for i in kv:
+    k,v = i.split(""="")
+    d[k] = v
+
+print(d)",Operator,3545,"inp = ""name1=123&name2=456&name3=789""
+kv = inp.split(""&"")
+d = {}
+for i in kv:
+    k,v = i.split(""="")
+    d[k] = v
+
+print(d)","    ___
+kv = inp.split(""&"")
+d = {}
+for i in kv:
+    k,v = i.split(""="")
+    d[k] = v
+
+print(d)"
+Generate a script in Python to run a linear regression model using scikit-learn.,[7 5 3 9 8 4] [7 3 4 6],"import numpy as np
+from sklearn.linear_model import LinearRegression
+
+x = np.array([[7,5,3,9,8,4]]).T
+y = np.array([7,3,4,6])
+
+model = LinearRegression()
+model.fit(x, y)
+
+preds = model.predict(x)
+
+print(f""R-squared score: {model.score(x,y)}"")
+print(f""Coefficients: {model.coef_}"")
+print(f""Predictions: {preds}"")",Operator,3556,"import numpy as np
+from sklearn.linear_model import LinearRegression
+
+x = np.array([[7,5,3,9,8,4]]).T
+y = np.array([7,3,4,6])
+
+model = LinearRegression()
+model.fit(x, y)
+
+preds = model.predict(x)
+
+print(f""R-squared score: {model.score(x,y)}"")
+print(f""Coefficients: {model.coef_}"")
+print(f""Predictions: {preds}"")","import numpy as np
+from sklearn.linear_model import LinearRegression
+
+x = np.array([[7,5,3,9,8,4]]).T
+y = np.array([7,3,4,6])
+
+model = LinearRegression()
+model.fit(x, y)
+
+preds = model.predict(x)
+
+    ___
+print(f""Coefficients: {model.coef_}"")
+print(f""Predictions: {preds}"")"
+Generate a Python program to optimize a low-cost route between two points,startX = 0 and endX = 10,"def optimize_route(startX, endX):
+    best_route = [startX]
+    next_x = startX
+
+    while next_x < endX:
+        best_cost = float(""inf"")
+        for x in range(next_x+1, endX+1):
+            cost = abs(x - next_x)
+            if cost < best_cost:
+                best_cost = cost
+                next_x = x
+        best_route.append(next_x)
+
+    return best_route",Operator,3577,"def optimize_route(startX, endX):
+    best_route = [startX]
+    next_x = startX
+
+    while next_x < endX:
+        best_cost = float(""inf"")
+        for x in range(next_x+1, endX+1):
+            cost = abs(x - next_x)
+            if cost < best_cost:
+                best_cost = cost
+                next_x = x
+        best_route.append(next_x)
+
+    return best_route","def optimize_route(startX, endX):
+    best_route = [startX]
+    next_x = startX
+
+    while next_x < endX:
+        best_cost = float(""inf"")
+    ___
+            cost = abs(x - next_x)
+            if cost < best_cost:
+                best_cost = cost
+                next_x = x
+        best_route.append(next_x)
+
+    return best_route"
+Write a Python script that reads in a user-defined data set and prints the top-5 highest values contained in the data set.,"[100.0, 74.0, 56.2, 45.5, 27.8, 21.0, 8.2, 4.1]","data = [100.0, 74.0, 56.2, 45.5, 27.8, 21.0, 8.2, 4.1]
+
+def get_top_five_values(data):
+    sorted_data = sorted(data, reverse=True)
+    top_five_values = sorted_data[:5]
+    return top_five_values
+
+top_five_values = get_top_five_values(data)
+print(top_five_values)",Operator,3579,"data = [100.0, 74.0, 56.2, 45.5, 27.8, 21.0, 8.2, 4.1]
+
+def get_top_five_values(data):
+    sorted_data = sorted(data, reverse=True)
+    top_five_values = sorted_data[:5]
+    return top_five_values
+
+top_five_values = get_top_five_values(data)
+print(top_five_values)","data = [100.0, 74.0, 56.2, 45.5, 27.8, 21.0, 8.2, 4.1]
+
+def get_top_five_values(data):
+    ___
+    top_five_values = sorted_data[:5]
+    return top_five_values
+
+top_five_values = get_top_five_values(data)
+print(top_five_values)"
+Create a function in Python to convert a given time from 12-hour clock format to 24-hour clock format.,3:45pm,"def time_conversion(time):
+    # Get hour and convert it to 24-hour format
+    hour = int(time[:2])
+    if time[-2:] == ""PM"":
+        hour += 12
+    # Get minutes
+    min = time[-5:-3]
+
+    return str(hour) + "":"" + min
+
+# Test
+print(time_conversion(""3:45pm"")) # 15:45",Operator,3643,"def time_conversion(time):
+    # Get hour and convert it to 24-hour format
+    hour = int(time[:2])
+    if time[-2:] == ""PM"":
+        hour += 12
+    # Get minutes
+    min = time[-5:-3]
+
+    return str(hour) + "":"" + min
+
+# Test
+print(time_conversion(""3:45pm"")) # 15:45","def time_conversion(time):
+    ___
+    hour = int(time[:2])
+    if time[-2:] == ""PM"":
+        hour += 12
+    # Get minutes
+    min = time[-5:-3]
+
+    return str(hour) + "":"" + min
+
+# Test
+print(time_conversion(""3:45pm"")) # 15:45"
+Create a class in Python to represent a 2-D point and implement a method for finding the Euclidean distance between the two points.,"p1 = (3, 4)
+p2 = (7, 8)","class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def distance(self, point):
+        x_diff = self.x - point.x
+        y_diff = self.y - point.y
+        return math.sqrt(x_diff**2 + y_diff**2)",Operator,3676,"class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def distance(self, point):
+        x_diff = self.x - point.x
+        y_diff = self.y - point.y
+        return math.sqrt(x_diff**2 + y_diff**2)","class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def distance(self, point):
+        x_diff = self.x - point.x
+        y_diff = self.y - point.y
+    ___"
+Create a Python script to partition a list into sub-lists of equal size.,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]","def partition(lst, n):
+ return [lst[i:i+n] for i in range(0, len(lst), n)]
+ 
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+partitions = partition(list, 3)
+ 
+for p in partitions:
+ print(p)
+
+# Output
+# [1, 2, 3]
+# [4, 5, 6]
+# [7, 8, 9]
+# [10]",Operator,3982,"def partition(lst, n):
+ return [lst[i:i+n] for i in range(0, len(lst), n)]
+ 
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+partitions = partition(list, 3)
+ 
+for p in partitions:
+ print(p)
+
+# Output
+# [1, 2, 3]
+# [4, 5, 6]
+# [7, 8, 9]
+# [10]","def partition(lst, n):
+    ___
+ 
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+partitions = partition(list, 3)
+ 
+for p in partitions:
+ print(p)
+
+# Output
+# [1, 2, 3]
+# [4, 5, 6]
+# [7, 8, 9]
+# [10]"
+Write a Python script for creating a type-safe data model based on a given JSON object.,"{""name"": ""Bob"", ""age"": 42, ""likes"": [""Sports"", ""Coding""]}","class DataModel:
+ def __init__(self, name: str, age: int, likes: List[str]):
+  self.name = name
+  self.age = age
+  self.likes = likes
+
+data = DataModel(name=""Bob"", age=42, likes=[""Sports"", ""Coding""])",Operator,4025,"class DataModel:
+ def __init__(self, name: str, age: int, likes: List[str]):
+  self.name = name
+  self.age = age
+  self.likes = likes
+
+data = DataModel(name=""Bob"", age=42, likes=[""Sports"", ""Coding""])","class DataModel:
+ def __init__(self, name: str, age: int, likes: List[str]):
+  self.name = name
+  self.age = age
+  self.likes = likes
+
+    ___"
+Write a Python program that sorts a list of integers in ascending order without using the built-in sort() method.,"[4, 5, 13, 2, 9, 7]","def selection_sort(arr):
+ n = len(arr)
+ for i in range(n):
+ min_idx = i
+ for j in range(i+1, n):
+ if arr[min_idx] > arr[j]:
+ min_idx = j
+ arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+arr = [4, 5, 13, 2, 9, 7]
+selection_sort(arr)
+print(arr)
+# Output: [2, 4, 5, 7, 9, 13]",Operator,4034,"def selection_sort(arr):
+ n = len(arr)
+ for i in range(n):
+ min_idx = i
+ for j in range(i+1, n):
+ if arr[min_idx] > arr[j]:
+ min_idx = j
+ arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+arr = [4, 5, 13, 2, 9, 7]
+selection_sort(arr)
+print(arr)
+# Output: [2, 4, 5, 7, 9, 13]","def selection_sort(arr):
+ n = len(arr)
+ for i in range(n):
+ min_idx = i
+    ___
+ if arr[min_idx] > arr[j]:
+ min_idx = j
+ arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+arr = [4, 5, 13, 2, 9, 7]
+selection_sort(arr)
+print(arr)
+# Output: [2, 4, 5, 7, 9, 13]"
+Write a Python program which prints out the Fibonacci series up to the N-th term.,15,"def print_fibonacci_series(n): 
+    a = 0
+    b = 1
+    c = 0
+
+    while c < n:
+        print(a,end="" "")
+        c = c+1
+        temp = a+b
+        a = b 
+        b = temp 
+		
+print_fibonacci_series(15)",Operator,4044,"def print_fibonacci_series(n): 
+    a = 0
+    b = 1
+    c = 0
+
+    while c < n:
+        print(a,end="" "")
+        c = c+1
+        temp = a+b
+        a = b 
+        b = temp 
+		
+print_fibonacci_series(15)","def print_fibonacci_series(n): 
+    a = 0
+    b = 1
+    c = 0
+
+    while c < n:
+        print(a,end="" "")
+    ___
+    ___
+        a = b 
+        b = temp 
+		
+print_fibonacci_series(15)"
+Generate a function in Python using the input argument side-effect free function to calculate the square root of a number.,25,"def get_sqrt(x):
+    return x**0.5",Operator,4045,"def get_sqrt(x):
+    return x**0.5","def get_sqrt(x):
+    ___"
+Generate a function in Python that takes a number as input and prints out the n-th Fibonacci number.,6,"def nthFibonacciNumber(n): 
+    if n==0: 
+        return 0
+    elif n==1: 
+        return 1
+    else: 
+        return nthFibonacciNumber(n-1)+nthFibonacciNumber(n-2)
+
+result = nthFibonacciNumber(6)
+print(result)",Operator,4117,"def nthFibonacciNumber(n): 
+    if n==0: 
+        return 0
+    elif n==1: 
+        return 1
+    else: 
+        return nthFibonacciNumber(n-1)+nthFibonacciNumber(n-2)
+
+result = nthFibonacciNumber(6)
+print(result)","def nthFibonacciNumber(n): 
+    ___
+        return 0
+    ___
+        return 1
+    else: 
+    ___
+
+result = nthFibonacciNumber(6)
+print(result)"
+Write a Python program to calculate the hypotenuse of a right-angled triangle.,"a = 5, b = 12","import math
+
+# calculate the hypotenuse
+def calc_hypotenuse(a, b):
+    hyp = math.sqrt(a**2 + b**2)
+    print(""The length of the hypotenuse is"", hyp)
+
+# input lengths of triangle sides
+a = 5
+b = 12
+
+# call the function
+calc_hypotenuse(a, b)",Operator,4142,"import math
+
+# calculate the hypotenuse
+def calc_hypotenuse(a, b):
+    hyp = math.sqrt(a**2 + b**2)
+    print(""The length of the hypotenuse is"", hyp)
+
+# input lengths of triangle sides
+a = 5
+b = 12
+
+# call the function
+calc_hypotenuse(a, b)","import math
+
+# calculate the hypotenuse
+def calc_hypotenuse(a, b):
+    ___
+    print(""The length of the hypotenuse is"", hyp)
+
+# input lengths of triangle sides
+a = 5
+b = 12
+
+# call the function
+calc_hypotenuse(a, b)"
+Create a dictionary in python from a comma-separated value string.,"s = ""name,age,city,country""","def csv_to_dict(s):
+    data_dict = {}
+    # split the string into list of elements
+    elements = s.split(',')
+    
+    # iterate through the list
+    for i in range(0, len(elements), 2):
+        # add each element as a key to the dictionary
+        data_dict[elements[i]] = elements[i+1]
+    
+    # return the dictionary
+    return data_dict",Operator,4192,"def csv_to_dict(s):
+    data_dict = {}
+    # split the string into list of elements
+    elements = s.split(',')
+    
+    # iterate through the list
+    for i in range(0, len(elements), 2):
+        # add each element as a key to the dictionary
+        data_dict[elements[i]] = elements[i+1]
+    
+    # return the dictionary
+    return data_dict","def csv_to_dict(s):
+    data_dict = {}
+    # split the string into list of elements
+    elements = s.split(',')
+    
+    # iterate through the list
+    for i in range(0, len(elements), 2):
+        # add each element as a key to the dictionary
+    ___
+    
+    # return the dictionary
+    return data_dict"
+"Develop a Python program that takes in a single-dimensional array as a parameter, and returns the number of subsets with size 3 or greater.","arr = [1, 2, 3, 4, 5]","def find_subsets(arr):
+    count = 0
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            for k in range(j+1, len(arr)):
+                count += 1
+    return count",Operator,4491,"def find_subsets(arr):
+    count = 0
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            for k in range(j+1, len(arr)):
+                count += 1
+    return count","def find_subsets(arr):
+    count = 0
+    for i in range(len(arr)):
+    ___
+    ___
+                count += 1
+    return count"
+"Write a Python function which, when given a string of text and a n number, returns a list of all n-grams within that string.","string = 'this is a simple string'
+n = 3","def n_grams(string, n):
+  tokens = string.split()
+  n_grams = []
+  for i in range(len(tokens)-n+1):
+    n_grams.append(tokens[i:i+n])
+  return n_grams",Operator,4669,"def n_grams(string, n):
+  tokens = string.split()
+  n_grams = []
+  for i in range(len(tokens)-n+1):
+    n_grams.append(tokens[i:i+n])
+  return n_grams","def n_grams(string, n):
+  tokens = string.split()
+  n_grams = []
+    ___
+    ___
+  return n_grams"
+"Write a Python program to generate a random list of length n containing integers within range (0, n-1).",n = 6,"import random 
+  
+def random_list(n): 
+    # Generating a random list of length n
+    random_list = [] 
+    for i in range(n): 
+        random_list.append(random.randint(0,n-1)) 
+      
+    return random_list 
+  
+# Driver Code 
+n = 6
+print(random_list(n))",Operator,4857,"import random 
+  
+def random_list(n): 
+    # Generating a random list of length n
+    random_list = [] 
+    for i in range(n): 
+        random_list.append(random.randint(0,n-1)) 
+      
+    return random_list 
+  
+# Driver Code 
+n = 6
+print(random_list(n))","import random 
+  
+def random_list(n): 
+    # Generating a random list of length n
+    random_list = [] 
+    for i in range(n): 
+    ___
+      
+    return random_list 
+  
+# Driver Code 
+n = 6
+print(random_list(n))"
+Write a Python program which accepts a sequence of comma-separated numbers from console and generates a list.,"1,2,3,4,5","numbers = input(""Please enter a sequence of comma-separated numbers:"")
+
+num_list = numbers.split(',')
+
+num_list = list(map(int, num_list))
+
+print(num_list)",Operator,4952,"numbers = input(""Please enter a sequence of comma-separated numbers:"")
+
+num_list = numbers.split(',')
+
+num_list = list(map(int, num_list))
+
+print(num_list)","    ___
+
+num_list = numbers.split(',')
+
+num_list = list(map(int, num_list))
+
+print(num_list)"
+Create a confidence-based voting system in Python.,"The input is a list of 5 different classifiers with numeric predictions: [classifier1: 0.6, classifier2: 0.3, classifier3: 0.2, classifier4: 0.9, classifier5: 0.1]","def confidence_voting(predictions):
+ classifier_sum = 0
+ total_confidence = 0
+ for classifier, prediction in predictions.items(): 
+     classifier_sum += prediction 
+     total_confidence += (classifier_sum * prediction)
+ return total_confidence/classifier_sum",Operator,4977,"def confidence_voting(predictions):
+ classifier_sum = 0
+ total_confidence = 0
+ for classifier, prediction in predictions.items(): 
+     classifier_sum += prediction 
+     total_confidence += (classifier_sum * prediction)
+ return total_confidence/classifier_sum","def confidence_voting(predictions):
+ classifier_sum = 0
+ total_confidence = 0
+ for classifier, prediction in predictions.items(): 
+     classifier_sum += prediction 
+     total_confidence += (classifier_sum * prediction)
+    ___"
+Add a try-catch block to the given Python code,"x = 10
+y = 0
+z = x/y","try:
+  x = 10
+  y = 0
+  z = x/y
+except ZeroDivisionError:
+  print(""ZeroDivisionError occurred: Cannot divide a number by 0"")",Operator,4993,"try:
+  x = 10
+  y = 0
+  z = x/y
+except ZeroDivisionError:
+  print(""ZeroDivisionError occurred: Cannot divide a number by 0"")","try:
+  x = 10
+  y = 0
+    ___
+except ZeroDivisionError:
+  print(""ZeroDivisionError occurred: Cannot divide a number by 0"")"
+Create a Python script for cleaning up text and removing non-alphabetic characters.,"This text contains some non-alphabetic characters, like ""%.","import re
+
+text = ""This text contains some non-alphabetic characters, like “%.”""
+
+clean_text = re.sub(r'[^a-zA-Z ]', '', text)
+
+print(clean_text)
+
+# Output: This text contains some alphabetic characters",Operator,5084,"import re
+
+text = ""This text contains some non-alphabetic characters, like “%.”""
+
+clean_text = re.sub(r'[^a-zA-Z ]', '', text)
+
+print(clean_text)
+
+# Output: This text contains some alphabetic characters","import re
+
+    ___
+
+    ___
+
+print(clean_text)
+
+# Output: This text contains some alphabetic characters"
+Improve the performance of the following code using Python's in-built functions.,"s = 'Google'
+count = 0
+for i in range(len(s)):
+    if s[i] == 'o':
+        count+=1","s = 'Google'
+# improved code
+# use of built-in functions to count the number of occurrences of 'o' in a string
+count = s.count('o')
+
+print('Number of occurrences of ""o"": {}'.format(count))",Operator,5156,"s = 'Google'
+# improved code
+# use of built-in functions to count the number of occurrences of 'o' in a string
+count = s.count('o')
+
+print('Number of occurrences of ""o"": {}'.format(count))","s = 'Google'
+# improved code
+    ___
+count = s.count('o')
+
+print('Number of occurrences of ""o"": {}'.format(count))"
+Create a web-scraping program in Python to scrape movie reviews from IMDb.,https://www.imdb.com/title/tt0816692/reviews?ref_=tt_urv,"import requests
+import bs4
+ 
+url = ""https://www.imdb.com/title/tt0816692/reviews?ref_=tt_urv""
+page = requests.get(url).text
+soup = bs4.BeautifulSoup(page, 'html.parser')
+
+reviews = soup.find_all(class_=""text show-more__control"")
+for review in reviews:
+    print(review.get_text())",Operator,5157,"import requests
+import bs4
+ 
+url = ""https://www.imdb.com/title/tt0816692/reviews?ref_=tt_urv""
+page = requests.get(url).text
+soup = bs4.BeautifulSoup(page, 'html.parser')
+
+reviews = soup.find_all(class_=""text show-more__control"")
+for review in reviews:
+    print(review.get_text())","import requests
+import bs4
+ 
+    ___
+page = requests.get(url).text
+soup = bs4.BeautifulSoup(page, 'html.parser')
+
+    ___
+for review in reviews:
+    print(review.get_text())"
+Create a function in Python that takes an array of strings and returns an array with the strings sorted in reverse-alphabetical order.,"[‘tomato’, ‘apple’, ‘mango’]","def reverse_sort(arr): 
+    return sorted(arr, reverse=True) 
+  
+# driver code 
+arr = [""tomato"", ""apple"", ""mango""] 
+sorted_arr = reverse_sort(arr) 
+  
+print(sorted_arr)",Operator,5167,"def reverse_sort(arr): 
+    return sorted(arr, reverse=True) 
+  
+# driver code 
+arr = [""tomato"", ""apple"", ""mango""] 
+sorted_arr = reverse_sort(arr) 
+  
+print(sorted_arr)","def reverse_sort(arr): 
+    ___
+  
+# driver code 
+arr = [""tomato"", ""apple"", ""mango""] 
+sorted_arr = reverse_sort(arr) 
+  
+print(sorted_arr)"
+Create a method in Python to format a date from the format dd-mm-yyyy to yyyy-mm-dd.,"date = ""10-05-2020""","def format_date(date):
+    splitted_date = date.split(""-"")
+    reformatted_date = splitted_date[::-1]
+    return ""-"".join(reformatted_date)
+
+format_date(""10-05-2020"")",Operator,5180,"def format_date(date):
+    splitted_date = date.split(""-"")
+    reformatted_date = splitted_date[::-1]
+    return ""-"".join(reformatted_date)
+
+format_date(""10-05-2020"")","def format_date(date):
+    splitted_date = date.split(""-"")
+    reformatted_date = splitted_date[::-1]
+    return ""-"".join(reformatted_date)
+
+    ___"
+Write a Python program to classify the given dataset using k-means clustering.,"x_points = {2, 4, 5, 10, 12, 13, 15, 16,18, 20}
+y_points = {3, 8, 10, 13, 15, 16, 18, 22, 25, 30}","from sklearn.cluster import KMeans
+
+def cluster_data(x_points, y_points):
+ X = list(zip(x_points, y_points))
+ clustering_model = KMeans(n_clusters=3)
+ clustering_model.fit(X)
+ labels = clustering_model.labels_
+ return labels",Operator,5252,"from sklearn.cluster import KMeans
+
+def cluster_data(x_points, y_points):
+ X = list(zip(x_points, y_points))
+ clustering_model = KMeans(n_clusters=3)
+ clustering_model.fit(X)
+ labels = clustering_model.labels_
+ return labels","from sklearn.cluster import KMeans
+
+def cluster_data(x_points, y_points):
+ X = list(zip(x_points, y_points))
+    ___
+ clustering_model.fit(X)
+ labels = clustering_model.labels_
+ return labels"
+Create a web-scraping script with Python to extract information from a website with 20 thousand pages.,Example website: https://example.com,"import requests
+import bs4
+
+url = 'https://example.com'
+
+while True:
+ response = requests.get(url)
+ soup = bs4.BeautifulSoup(response.text, 'html.parser')
+
+ # Extract information here
+
+ next_page_url = soup.find('a', {'class': 'next-page'})
+ if next_page_url:
+ url = next_page_url['href']
+ else:
+ break",Operator,5311,"import requests
+import bs4
+
+url = 'https://example.com'
+
+while True:
+ response = requests.get(url)
+ soup = bs4.BeautifulSoup(response.text, 'html.parser')
+
+ # Extract information here
+
+ next_page_url = soup.find('a', {'class': 'next-page'})
+ if next_page_url:
+ url = next_page_url['href']
+ else:
+ break","import requests
+import bs4
+
+url = 'https://example.com'
+
+while True:
+ response = requests.get(url)
+ soup = bs4.BeautifulSoup(response.text, 'html.parser')
+
+ # Extract information here
+
+    ___
+ if next_page_url:
+ url = next_page_url['href']
+ else:
+ break"
+Write a Python program to sort a given list in ascending order without using built-in functions.,"[3, 7, 4, 1, 9]","def sort_list(lst):
+    for i in range(0, len(lst)):
+        for j in range(i+1, len(lst)):
+            if lst[i] > lst[j]:
+                lst[i], lst[j] = lst[j], lst[i]
+    
+    return lst
+
+print(sort_list([3, 7, 4, 1, 9])) # prints [1, 3, 4, 7, 9]",Operator,5471,"def sort_list(lst):
+    for i in range(0, len(lst)):
+        for j in range(i+1, len(lst)):
+            if lst[i] > lst[j]:
+                lst[i], lst[j] = lst[j], lst[i]
+    
+    return lst
+
+print(sort_list([3, 7, 4, 1, 9])) # prints [1, 3, 4, 7, 9]","def sort_list(lst):
+    for i in range(0, len(lst)):
+    ___
+            if lst[i] > lst[j]:
+                lst[i], lst[j] = lst[j], lst[i]
+    
+    return lst
+
+print(sort_list([3, 7, 4, 1, 9])) # prints [1, 3, 4, 7, 9]"
+Create a Python program to generate an ISO8601-compliant string from a given date,Date: 2020-07-15,"from datetime import datetime
+
+date_str = '2020-07-15'
+date = datetime.strptime(date_str, '%Y-%m-%d')
+iso8601_str = date.isoformat()
+
+print(iso8601_str)
+# Output: 2020-07-15T00:00:00",Operator,5643,"from datetime import datetime
+
+date_str = '2020-07-15'
+date = datetime.strptime(date_str, '%Y-%m-%d')
+iso8601_str = date.isoformat()
+
+print(iso8601_str)
+# Output: 2020-07-15T00:00:00","from datetime import datetime
+
+    ___
+date = datetime.strptime(date_str, '%Y-%m-%d')
+iso8601_str = date.isoformat()
+
+print(iso8601_str)
+    ___"
+"Write a Python program to generate a dictionary that contains a number (between 1 and n) in the form (x, x*x).",n = 8,"def generate_dict(n):
+    my_dict = {}
+    for num in range(1, n+1):
+        my_dict[num] = num * num
+    return my_dict
+
+print(generate_dict(8)) # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}",Operator,5740,"def generate_dict(n):
+    my_dict = {}
+    for num in range(1, n+1):
+        my_dict[num] = num * num
+    return my_dict
+
+print(generate_dict(8)) # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}","def generate_dict(n):
+    my_dict = {}
+    ___
+        my_dict[num] = num * num
+    return my_dict
+
+print(generate_dict(8)) # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}"
+Write a Python program to remove the nth index character from a non-empty string.,"String: ""Hello world!"", index: 5","def remove_character(string, index):
+    return string[:index] + string[index+1:]
+
+input_string =  'Hello World!'
+index = 5
+
+print(remove_character(input_string, index))",Operator,5753,"def remove_character(string, index):
+    return string[:index] + string[index+1:]
+
+input_string =  'Hello World!'
+index = 5
+
+print(remove_character(input_string, index))","def remove_character(string, index):
+    ___
+
+input_string =  'Hello World!'
+index = 5
+
+print(remove_character(input_string, index))"
+Create a Python program to generate the n-th item in the Fibonacci sequence.,5,"def Fibonacci(n): 
+    if n<0: 
+        print(""Incorrect input"") 
+    # First Fibonacci number is 0 
+    elif n==1: 
+        return 0
+    # Second Fibonacci number is 1 
+    elif n==2: 
+        return 1
+    else: 
+        return Fibonacci(n-1)+Fibonacci(n-2) 
+
+# Driver Code 
+n = 5
+print(Fibonacci(n))",Operator,5766,"def Fibonacci(n): 
+    if n<0: 
+        print(""Incorrect input"") 
+    # First Fibonacci number is 0 
+    elif n==1: 
+        return 0
+    # Second Fibonacci number is 1 
+    elif n==2: 
+        return 1
+    else: 
+        return Fibonacci(n-1)+Fibonacci(n-2) 
+
+# Driver Code 
+n = 5
+print(Fibonacci(n))","def Fibonacci(n): 
+    ___
+        print(""Incorrect input"") 
+    # First Fibonacci number is 0 
+    ___
+        return 0
+    # Second Fibonacci number is 1 
+    ___
+        return 1
+    else: 
+    ___
+
+# Driver Code 
+n = 5
+print(Fibonacci(n))"
+Generate a python code to evaluate a given polynomial at a given x-value.,"polynomial = [2, 4, 5]
+x = 3","def evaluate_polynomial(polynomial, x):
+    result = 0
+ 
+    for i in range(len(polynomial)):
+        result += polynomial[i] * x**i
+ 
+    return result
+ 
+print(evaluate_polynomial(polynomial, x))",Operator,5771,"def evaluate_polynomial(polynomial, x):
+    result = 0
+ 
+    for i in range(len(polynomial)):
+        result += polynomial[i] * x**i
+ 
+    return result
+ 
+print(evaluate_polynomial(polynomial, x))","def evaluate_polynomial(polynomial, x):
+    result = 0
+ 
+    for i in range(len(polynomial)):
+    ___
+ 
+    return result
+ 
+print(evaluate_polynomial(polynomial, x))"
+Re-write a given Python code snippet using list comprehensions.,"squares = []
+for n in range(10):
+    squares.append(n**2)",squares = [n**2 for n in range(10)],Operator,6078,squares = [n**2 for n in range(10)],    ___
+"Write a Python program that takes a number n and generates a dictionary that contains (i, i*i) such that n is greater than or equal to i >= 1 and",n = 8,"def generate_dict(n):
+    d = {}
+    for i in range(1, n+1):
+       d[i] = i*i
+    return d",Operator,6081,"def generate_dict(n):
+    d = {}
+    for i in range(1, n+1):
+       d[i] = i*i
+    return d","def generate_dict(n):
+    d = {}
+    ___
+    ___
+    return d"
+Develop a program using Python to replace all the non-alphanumeric characters in a given string with an asterisk ('*')?,"""Hello* World_$!"",","import re
+
+def replaceNonAlphanum(s):
+    pattern = r""[^a-zA-Z0-9]""
+    return re.sub(pattern, ""*"", s)
+
+s = ""Hello* World_$!""
+print(replaceNonAlphanum(s))
+// Output: Hello** World**$*",Operator,6202,"import re
+
+def replaceNonAlphanum(s):
+    pattern = r""[^a-zA-Z0-9]""
+    return re.sub(pattern, ""*"", s)
+
+s = ""Hello* World_$!""
+print(replaceNonAlphanum(s))
+// Output: Hello** World**$*","import re
+
+def replaceNonAlphanum(s):
+    ___
+    return re.sub(pattern, ""*"", s)
+
+s = ""Hello* World_$!""
+print(replaceNonAlphanum(s))
+// Output: Hello** World**$*"
+Re-write the following SQL query into Python code.,"SELECT *
+FROM table
+WHERE column1 = 'value1' AND column2 = 'value2'.","# define the parameters for the query
+column1 = 'value1'
+column2 = 'value2'
+
+# execute the query
+result = table.objects.filter(column1=column1, column2=column2)",Operator,6247,"# define the parameters for the query
+column1 = 'value1'
+column2 = 'value2'
+
+# execute the query
+result = table.objects.filter(column1=column1, column2=column2)","# define the parameters for the query
+column1 = 'value1'
+column2 = 'value2'
+
+# execute the query
+    ___"
+Re-write the following Python code using list comprehensions.,"lst = []
+for each in range(5):
+  x = each*each
+  lst.append(x)",lst=[each*each for each in range(5)],Operator,6375,lst=[each*each for each in range(5)],    ___
+Write a Python program to classify a given set of inputs into clusters using k-means algorithm,"data_points = [[2, 2], [5, 5], [2, 4], [5, 4], [6, 2], [7, 3]]","from sklearn.cluster import KMeans 
+import numpy as np 
+
+data_points = np.array(data_points) 
+
+kmeans = KMeans(n_clusters=2,random_state=0).fit(data_points) 
+clusters = kmeans.labels_ 
+  
+print(clusters)",Operator,6377,"from sklearn.cluster import KMeans 
+import numpy as np 
+
+data_points = np.array(data_points) 
+
+kmeans = KMeans(n_clusters=2,random_state=0).fit(data_points) 
+clusters = kmeans.labels_ 
+  
+print(clusters)","from sklearn.cluster import KMeans 
+import numpy as np 
+
+data_points = np.array(data_points) 
+
+    ___
+clusters = kmeans.labels_ 
+  
+print(clusters)"
+Edit the given Python code to add a try-except block.,"x = 5
+y = 0
+z = x/y
+
+print(z)","try:
+  x = 5
+  y = 0
+  z = x/y
+  print(z)
+except ZeroDivisionError as e:
+  print('Cannot divide by zero!')",Operator,6543,"try:
+  x = 5
+  y = 0
+  z = x/y
+  print(z)
+except ZeroDivisionError as e:
+  print('Cannot divide by zero!')","try:
+  x = 5
+  y = 0
+    ___
+  print(z)
+except ZeroDivisionError as e:
+  print('Cannot divide by zero!')"
+Create a Python program to sort a given list of integers in descending order without using a library/built-in function.,"ex_list = [5, 2, 8, 9, 4, 1]","def sort_list(lst):
+    for i in range(len(lst) - 1):
+        for j in range(i+1, len(lst)):
+            if lst[i] < lst[j]:
+                lst[i], lst[j] = lst[j], lst[i]
+    return lst",Operator,6602,"def sort_list(lst):
+    for i in range(len(lst) - 1):
+        for j in range(i+1, len(lst)):
+            if lst[i] < lst[j]:
+                lst[i], lst[j] = lst[j], lst[i]
+    return lst","def sort_list(lst):
+    for i in range(len(lst) - 1):
+    ___
+            if lst[i] < lst[j]:
+                lst[i], lst[j] = lst[j], lst[i]
+    return lst"
+Rewrite the following Python code avoiding nested if-statements.,"def check_integer(x):
+  if x > 0:
+    if x*x > 10:
+      return True
+    else:
+      return False
+  else:
+    return False","def check_integer(x):
+  if x <= 0:
+    return False
+  if x*x > 10:
+    return True
+  return False",Operator,6704,"def check_integer(x):
+  if x <= 0:
+    return False
+  if x*x > 10:
+    return True
+  return False","def check_integer(x):
+  if x <= 0:
+    return False
+    ___
+    return True
+  return False"
+Create a Python program to calculate the sum of series 1 + ½ + ⅓ + ... + 1/n.,n = 5,"def seriesSum(n):
+    # set the initial sum to 0
+    total = 0
+
+    # loop over the range
+    for i in range(1, n+1):
+        total += 1 / i
+
+    return total
+
+print(seriesSum(5))",Operator,6758,"def seriesSum(n):
+    # set the initial sum to 0
+    total = 0
+
+    # loop over the range
+    for i in range(1, n+1):
+        total += 1 / i
+
+    return total
+
+print(seriesSum(5))","def seriesSum(n):
+    # set the initial sum to 0
+    total = 0
+
+    # loop over the range
+    ___
+        total += 1 / i
+
+    return total
+
+print(seriesSum(5))"
+Edit the python code to add try-except blocks for any potential error.,"def function(num1, num2):
+ result = num1/num2;
+ return result;","def function(num1, num2):
+ try:
+ result = num1/num2;
+ return result;
+ except ZeroDivisionError:
+  print(""Division by 0 not allowed"")",Operator,6898,"def function(num1, num2):
+ try:
+ result = num1/num2;
+ return result;
+ except ZeroDivisionError:
+  print(""Division by 0 not allowed"")","def function(num1, num2):
+ try:
+    ___
+ return result;
+ except ZeroDivisionError:
+  print(""Division by 0 not allowed"")"
+Create a Python program that takes a list as input and sorts it using bubble-sort algorithm.,"[3,2,5,6,1,4]","def bubble_sort(lst): 
+    for i in range(len(lst)): 
+        for j in range(0, len(lst)-i-1): 
+            if lst[j] > lst[j+1] : 
+                lst[j], lst[j+1] = lst[j+1], lst[j]
+ 
+list = [3,2,5,6,1,4]
+bubble_sort(list)
+print('Sorted list is: ', list)",Operator,6997,"def bubble_sort(lst): 
+    for i in range(len(lst)): 
+        for j in range(0, len(lst)-i-1): 
+            if lst[j] > lst[j+1] : 
+                lst[j], lst[j+1] = lst[j+1], lst[j]
+ 
+list = [3,2,5,6,1,4]
+bubble_sort(list)
+print('Sorted list is: ', list)","def bubble_sort(lst): 
+    for i in range(len(lst)): 
+    ___
+    ___
+    ___
+ 
+list = [3,2,5,6,1,4]
+bubble_sort(list)
+print('Sorted list is: ', list)"
+"Write a Python script to generate a dictionary that contains (i, i*i) such that i is an integer from 1 to n (both included).",3,"n = 3
+my_dict = {} 
+for i in range(1, n+1): 
+    my_dict[i] = i * i
+
+print(my_dict)",Operator,7211,"n = 3
+my_dict = {} 
+for i in range(1, n+1): 
+    my_dict[i] = i * i
+
+print(my_dict)","n = 3
+my_dict = {} 
+    ___
+    my_dict[i] = i * i
+
+print(my_dict)"
+Generate a Python script to sort a given list of numbers without using the built-in function ``sort()``,"list = [3,2,7,5,4,1,8]","def sort_list(list):
+    '''This function will sort a given list of numbers without using the built-in function sort()'''
+    for i in range(len(list)):
+        for j in range(i+1, len(list)):
+            if list[i] > list[j]:
+                list[i], list[j] = list[j], list[i]
+    return list",Operator,7337,"def sort_list(list):
+    '''This function will sort a given list of numbers without using the built-in function sort()'''
+    for i in range(len(list)):
+        for j in range(i+1, len(list)):
+            if list[i] > list[j]:
+                list[i], list[j] = list[j], list[i]
+    return list","def sort_list(list):
+    ___
+    for i in range(len(list)):
+    ___
+            if list[i] > list[j]:
+                list[i], list[j] = list[j], list[i]
+    return list"
+Write a Python program to find the first non-repeated letter in a string.,"""apple""","def first_non_repeating_letter(str):
+    for char in str:
+        if str.lower().count(char.lower()) == 1:
+            return char
+
+    return ''
+
+# main
+str = ""apple""
+print(""First non-repeating letter:"", first_non_repeating_letter(str))",Operator,7361,"def first_non_repeating_letter(str):
+    for char in str:
+        if str.lower().count(char.lower()) == 1:
+            return char
+
+    return ''
+
+# main
+str = ""apple""
+print(""First non-repeating letter:"", first_non_repeating_letter(str))","def first_non_repeating_letter(str):
+    for char in str:
+        if str.lower().count(char.lower()) == 1:
+            return char
+
+    return ''
+
+# main
+str = ""apple""
+    ___"
+Generate a Python Program that sorts a list of numbers in non-increasing order,"[3, 8, 1, 5]","def descending_sort(list): 
+    list.sort(reverse=True) 
+    return list
+
+list = [3, 8, 1, 5]
+result = descending_sort(list)
+print(result)",Operator,7410,"def descending_sort(list): 
+    list.sort(reverse=True) 
+    return list
+
+list = [3, 8, 1, 5]
+result = descending_sort(list)
+print(result)","def descending_sort(list): 
+    ___
+    return list
+
+list = [3, 8, 1, 5]
+result = descending_sort(list)
+print(result)"
+Write a web scraper in Python that extracts the price of Apple's iPhone from an e-commerce website.,"Link to an e-commerce website that sells Apple's iPhone:  
+https://store.apple.com/us/buy-iphone/iphone-11","import requests
+from bs4 import BeautifulSoup
+
+link = 'https://store.apple.com/us/buy-iphone/iphone-11'
+
+page = requests.get(link)
+soup = BeautifulSoup(page.content, 'html.parser')
+
+price = soup.find('span', id='pricing-product-price-value').text
+print(price)",Operator,7537,"import requests
+from bs4 import BeautifulSoup
+
+link = 'https://store.apple.com/us/buy-iphone/iphone-11'
+
+page = requests.get(link)
+soup = BeautifulSoup(page.content, 'html.parser')
+
+price = soup.find('span', id='pricing-product-price-value').text
+print(price)","import requests
+from bs4 import BeautifulSoup
+
+    ___
+
+page = requests.get(link)
+soup = BeautifulSoup(page.content, 'html.parser')
+
+    ___
+print(price)"
+"Develop a Python program to remove all characters from an input string that are not a-z, A-Z, 0-9, or white space.","""Hello,@ $World.""","import re
+
+def remove_non_alphanum(s):
+  return re.sub('[^a-zA-Z0-9 \n\.]', '', s)
+
+string = ""Hello,@ $World.""
+res = remove_non_alphanum(string) 
+
+print(res)",Operator,7541,"import re
+
+def remove_non_alphanum(s):
+  return re.sub('[^a-zA-Z0-9 \n\.]', '', s)
+
+string = ""Hello,@ $World.""
+res = remove_non_alphanum(string) 
+
+print(res)","import re
+
+def remove_non_alphanum(s):
+    ___
+
+string = ""Hello,@ $World.""
+res = remove_non_alphanum(string) 
+
+print(res)"
+Edit the following Python code to re-rank the numbers in descending order.,"numbers = [4, 7, 2, 3]","numbers = [4, 7, 2, 3]
+numbers.sort(reverse=True)
+print(numbers)",Operator,7544,"numbers = [4, 7, 2, 3]
+numbers.sort(reverse=True)
+print(numbers)","numbers = [4, 7, 2, 3]
+    ___
+print(numbers)"
